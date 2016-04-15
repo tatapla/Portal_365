@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dev-web:4999/" />
+<title>Врачи.Расписание</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Врачи.Расписание</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/AccountUser/Login?ReturnUrl=%2F</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var d=new Date(); d.getDate();</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${date}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ДЦ на Карповке</td>
+	<td>acc</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${acc}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Кабинет №1</td>
+	<td>cab</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${cab}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Зеленокор Валентина Анатольевна</td>
+	<td>doc</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${doc}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=UserName</td>
+	<td>practitionermanager</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@class=&quot;btn btn-primary btn-block&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//ul[@id='MainMenu']//a[contains(text(),'Главная')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//ul[@id='MainMenu']//span[contains(text(),'Модули')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='MainMenu']//span[contains(text(),'Модули')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//ul[@id='MainMenu']//span[contains(text(),'Врачи')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//ul[@id='MainMenu']//span[contains(text(),'Врачи')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='MainMenu']//span[contains(text(),'Врачи')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//ul[@id='MainMenu']//a[contains(text(),'Расписание кабинетов')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//ul[@id='MainMenu']//a[contains(text(),'Расписание кабинетов')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='MainMenu']//a[contains(text(),'Расписание кабинетов')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[@aria-owns=&quot;AccountCode_listbox&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@aria-owns=&quot;AccountCode_listbox&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//ul[@id=&quot;AccountCode_listbox&quot;]/li[contains(text(),'${acc}')]</td>
+	<td>${acc}</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//ul[@id=&quot;AccountCode_listbox&quot;]/li[contains(text(),'${acc}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id=&quot;AccountCode_listbox&quot;]/li[contains(text(),'${acc}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@aria-owns=&quot;CabinetCode_listbox&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//ul[@id=&quot;CabinetCode_listbox&quot;]/li[contains(text(),'${cab}')]</td>
+	<td>${cab}</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//ul[@id=&quot;CabinetCode_listbox&quot;]/li[contains(text(),'${cab}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id=&quot;CabinetCode_listbox&quot;]/li[contains(text(),'${cab}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;calendar&quot;]//a[contains(text(),'${date}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='oneDay']/div[@class=&quot;panel panel-default&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='oneDay']//button[@class=&quot;btn btn-lg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=editSchWnd_wnd_title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='form0']//span[contains(text(),'Укажите врача')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='form0']//span[contains(text(),'Укажите врача')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),'${doc}')]</td>
+	<td>${doc}</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),'${doc}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),'${doc}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//form[@id=&quot;form0&quot;]//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id=&quot;form0&quot;]//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=PractitionerManager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Выйти</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dev-web:4999/" />
+<title>deleteMedPred</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">deleteMedPred</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/CRM/MedicalRepresentatives</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=filter-lastname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filter-lastname</td>
+	<td>коновалова</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=applyBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>css=table.k-selectable.0.1</td>
+	<td>Коновалова Мария Сергеевна</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.k-selectable.0.3</td>
+	<td>07.08.1981</td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>css=table.k-selectable.0.4</td>
+	<td>+7(911) 038-42-92+7(911) 038-42-92</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.k-selectable.0.5</td>
+	<td>testus1@bk.ru</td>
+</tr>
+</tbody></table>
+</body>
+</html>

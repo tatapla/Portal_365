@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dev-web:4999/" />
+<title>addMedPred</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">addMedPred</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/AccountUser/Login?ReturnUrl=%2FCRM%2FMedicalRepresentatives</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Хеликс 365</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//button[@class=&quot;btn btn-default btn-block&quot;])</td>
+	<td>Войти как Windows-пользователь</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@class=&quot;btn btn-default btn-block&quot;])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Добавить профиль</td>
+	<td>Добавить профиль</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Медицинские представители</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Добавить профиль</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=li.active</td>
+	<td>Создание нового профиля</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.panel-heading.clearfix</td>
+	<td>Персональные данные</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LastName</td>
+	<td>Коновалова</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=FirstName</td>
+	<td>Мария</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MiddleName</td>
+	<td>Сергеевна</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Birthday</td>
+	<td>07.08.1981</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Gender</td>
+	<td>label=Женский</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=City</td>
+	<td>г. Тольятти, обл Самарская</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=PhoneNumber</td>
+	<td>+7(911) 038-42-92</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AdditionalPhoneNumber</td>
+	<td>88482454147</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Email</td>
+	<td>testus1@bk.ru</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Comments</td>
+	<td>Комент - тест</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[4]/span[2]</td>
+	<td>Профиль Коновалова Мария Сергеевна успешно создан</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=td</td>
+	<td>Код в системе</td>
+</tr>
+</tbody></table>
+</body>
+</html>
