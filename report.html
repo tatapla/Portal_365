@@ -54,7 +54,7 @@ a {
 </tr>
 <tr>
 <td>totalTime:</td>
-<td>67</td>
+<td>13</td>
 </tr>
 <tr>
 <td>numTestTotal:</td>
@@ -74,7 +74,7 @@ a {
 </tr>
 <tr>
 <td>numCommandFailures:</td>
-<td>2</td>
+<td>1</td>
 </tr>
 <tr>
 <td>numCommandErrors:</td>
@@ -91,7 +91,7 @@ a {
 <tr>
 <td>
 <table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
-<tr class="title  status_failed"><td><b>Test Suite</b></td></tr>
+<tr class="title status_failed"><td><b>Test Suite</b></td></tr>
 <tr class="  status_failed"><td><a href="#testresult0">Practitioner.AddCabinetSchedule</a></td></tr>
 </tbody></table>
 
@@ -230,10 +230,10 @@ a {
 	<td>//ul[@id="AccountCode_listbox"]/li[contains(text(),'${acc}')]</td>
 	<td></td>
 </tr>
-<tr class="  status_failed" style="cursor: pointer;">
-	<td>clickAndWait</td>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
 	<td>//ul[@id="AccountCode_listbox"]/li[contains(text(),'${acc}')]</td>
-	<td>Timed&nbsp;out&nbsp;after&nbsp;30000ms</td>
+	<td></td>
 </tr>
 <tr class="  status_done" style="cursor: pointer;">
 	<td>pause</td>
@@ -338,13 +338,13 @@ info: script is: var d=new Date(); d.getDate();
 info: Executing: |echo | ${date} |  |
 info: Executing: |store | ???¦ ???° ???°???????????µ | acc |
 info: Executing: |echo | ${acc} |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |store | ???°?±?????µ?? ???1 | cab |
 info: Executing: |echo | ${cab} |  |
-info: Executing: |store | ???µ?»?µ?????????? ???°?»?µ?????????° ?????°?????»???µ?????° | doc |
 info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |store | ???µ?»?µ?????????? ???°?»?µ?????????° ?????°?????»???µ?????° | doc |
 info: Executing: |echo | ${doc} |  |
 info: Executing: |type | id=UserName | practitionermanager |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |type | id=Password | 123456 |
 info: Executing: |click | //button[@class=&quot;btn btn-primary btn-block&quot;] |  |
 info: Executing: |waitForElementPresent | //ul[@id=&apos;MainMenu&apos;]//a[contains(text(),&apos;???»?°?????°??&apos;)] |  |
@@ -355,38 +355,38 @@ info: Executing: |waitForElementPresent | //ul[@id=&apos;MainMenu&apos;]//span[c
 info: Executing: |mouseOver | //ul[@id=&apos;MainMenu&apos;]//span[contains(text(),&apos;?????°????&apos;)] |  |
 info: Executing: |click | //ul[@id=&apos;MainMenu&apos;]//span[contains(text(),&apos;?????°????&apos;)] |  |
 info: Executing: |waitForElementPresent | //ul[@id=&apos;MainMenu&apos;]//a[contains(text(),&apos;? ?°?????????°?????µ ???°?±?????µ??????&apos;)] |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |mouseOver | //ul[@id=&apos;MainMenu&apos;]//a[contains(text(),&apos;? ?°?????????°?????µ ???°?±?????µ??????&apos;)] |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |click | //ul[@id=&apos;MainMenu&apos;]//a[contains(text(),&apos;? ?°?????????°?????µ ???°?±?????µ??????&apos;)] |  |
 info: Executing: |waitForElementPresent | //span[@aria-owns=&quot;AccountCode_listbox&quot;] |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |click | //span[@aria-owns=&quot;AccountCode_listbox&quot;] |  |
 info: Executing: |waitForText | //ul[@id=&quot;AccountCode_listbox&quot;]/li[contains(text(),&apos;${acc}&apos;)] | ${acc} |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |mouseOver | //ul[@id=&quot;AccountCode_listbox&quot;]/li[contains(text(),&apos;${acc}&apos;)] |  |
-info: Executing: |clickAndWait | //ul[@id=&quot;AccountCode_listbox&quot;]/li[contains(text(),&apos;${acc}&apos;)] |  |
-warn: currentTest.recordFailure: Timed out after 30000ms
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | //ul[@id=&quot;AccountCode_listbox&quot;]/li[contains(text(),&apos;${acc}&apos;)] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |click | //span[@aria-owns=&quot;CabinetCode_listbox&quot;] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |waitForText | //ul[@id=&quot;CabinetCode_listbox&quot;]/li[contains(text(),&apos;${cab}&apos;)] | ${cab} |
 info: Executing: |mouseOver | //ul[@id=&quot;CabinetCode_listbox&quot;]/li[contains(text(),&apos;${cab}&apos;)] |  |
 info: Executing: |click | //ul[@id=&quot;CabinetCode_listbox&quot;]/li[contains(text(),&apos;${cab}&apos;)] |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |click | //div[@id=&quot;calendar&quot;]//a[@class=&quot;k-link&quot;][contains(text(),&apos;${date}&apos;)] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |waitForElementPresent | //div[@id=&apos;oneDay&apos;]/div[@class=&quot;panel panel-default&quot;] |  |
 info: Executing: |click | //div[@id=&apos;oneDay&apos;]//button[@class=&quot;btn btn-lg&quot;] |  |
 info: Executing: |waitForElementPresent | id=editSchWnd_wnd_title |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |waitForElementPresent | //form[@id=&apos;form0&apos;]//span[contains(text(),&apos;?????°?¶?????µ ?????°???°&apos;)] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |click | //form[@id=&apos;form0&apos;]//span[contains(text(),&apos;?????°?¶?????µ ?????°???°&apos;)] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |waitForText | //ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),&apos;${doc}&apos;)] | ${doc} |
 info: Executing: |mouseOver | //ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),&apos;${doc}&apos;)] |  |
 info: Executing: |click | //ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),&apos;${doc}&apos;)] |  |
 info: Executing: |mouseOver | //form[@id=&quot;form0&quot;]//button[@type=&apos;submit&apos;] |  |
 info: Executing: |click | //form[@id=&quot;form0&quot;]//button[@type=&apos;submit&apos;] |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |click | link=PractitionerManager |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |clickAndWait | link=?????????? |  |
 warn: currentTest.recordFailure: There was an unexpected Alert! []
 </pre></body></html>
