@@ -4,16 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://dev-web:4999/" />
-<title>Врачи.Расписание</title>
+<title>Practitioner.DeleteCabinetSchedule</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Врачи.Расписание</td></tr>
+<tr><td rowspan="1" colspan="3">Practitioner.DeleteCabinetSchedule</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/</td>
+	<td>/Practitioners/Schedule/CabinetSchedule</td>
 	<td></td>
 </tr>
 <tr>
@@ -54,46 +54,6 @@
 <tr>
 	<td>echo</td>
 	<td>${doc}</td>
-	<td></td>
-</tr>
-<tr>
-	<td>mouseOver</td>
-	<td>//ul[@id='MainMenu']//span[contains(text(),'Модули')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//ul[@id='MainMenu']//span[contains(text(),'Модули')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//ul[@id='MainMenu']//span[contains(text(),'Врачи')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>mouseOver</td>
-	<td>//ul[@id='MainMenu']//span[contains(text(),'Врачи')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//ul[@id='MainMenu']//span[contains(text(),'Врачи')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//ul[@id='MainMenu']//a[contains(text(),'Расписание кабинетов')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>mouseOver</td>
-	<td>//ul[@id='MainMenu']//a[contains(text(),'Расписание кабинетов')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//ul[@id='MainMenu']//a[contains(text(),'Расписание кабинетов')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -157,55 +117,26 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[@id='oneDay']//button[@class=&quot;btn btn-lg&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>id=editSchWnd_wnd_title</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//form[@id='form0']//span[contains(text(),'Укажите врача')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//form[@id='form0']//span[contains(text(),'Укажите врача')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
-	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),'${doc}')]</td>
-	<td>${doc}</td>
-</tr>
-<tr>
-	<td>mouseOver</td>
-	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),'${doc}')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),'${doc}')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>mouseOver</td>
-	<td>//form[@id=&quot;form0&quot;]//button[@type='submit']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//form[@id=&quot;form0&quot;]//button[@type='submit']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForText</td>
+	<td>assertText</td>
 	<td>css=div.label.label-primary &gt; table &gt; tbody &gt; tr &gt; td</td>
 	<td>exact:07:30 - 22:00 Зеленокор Валентина Анатольевна</td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>//td/button[@title=&quot;Удалить элемент расписания&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.label.label-default &gt; table &gt; tbody &gt; tr &gt; td</td>
+	<td>exact:07:30 - 22:00</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.label.label-default &gt; table &gt; tbody &gt; tr &gt; td</td>
+	<td>exact:07:30 - 22:00</td>
+</tr>
+
 </tbody></table>
 </body>
 </html>
