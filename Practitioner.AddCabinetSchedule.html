@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
@@ -44,16 +44,6 @@
 <tr>
 	<td>echo</td>
 	<td>${cab}</td>
-	<td></td>
-</tr>
-<tr>
-	<td>store</td>
-	<td>Зеленокор Валентина Анатольевна</td>
-	<td>doc</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>${doc}</td>
 	<td></td>
 </tr>
 <tr>
@@ -158,7 +148,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='oneDay']//button[@class=&quot;btn btn-lg&quot;]</td>
+	<td>//div[@id='oneDay']//button[@class=&quot;btn btn-lg&quot;][@title=&quot;Создать новый элемент расписания&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -177,13 +167,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),'${doc}')]</td>
-	<td>${doc}</td>
+	<td>waitForElementPresent</td>
+	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[2]</td>
+	<td>doc</td>
 </tr>
 <tr>
 	<td>mouseOver</td>
-	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[contains(text(),'${doc}')]</td>
+	<td>//ul[@id=&quot;PractitionerCode_listbox&quot;]/li[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -202,9 +197,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>css=div.label.label-primary &gt; table &gt; tbody &gt; tr &gt; td</td>
-	<td>exact:07:30 - 22:00 Зеленокор Валентина Анатольевна</td>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='oneDay']//td[contains(text(),'07:30 - 22:00 ${doc}')]</td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>
